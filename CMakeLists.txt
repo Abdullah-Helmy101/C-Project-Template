@@ -1,14 +1,13 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(change_Me LANGUAGES CXX)
+project(project LANGUAGES C)
 
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_C_STANDARD 23)
 
-add_executable(change_Me
-    src/main.cpp
+add_executable(main
+    src/main.c
 )
 
-target_include_directories(change_Me PRIVATE
+target_include_directories(main PRIVATE
     ${CMAKE_INCLUDE_CURRENT_DIR}/include
 )
